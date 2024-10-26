@@ -1,23 +1,25 @@
 <template>
   <header :class="isLoaded ? 'animate-fadeIn' : 'opacity-0'" class="bg-gradient-to-r from-indigo-600 to-blue-500 shadow-lg">
     <div class="container mx-auto p-6">
-      <nav class="flex justify-between items-center">
+      <nav class="flex flex-col md:flex-row justify-between items-center">
         <!-- Logo / Title -->
         <h1 class="text-2xl font-extrabold text-white tracking-wide">
           My<span class="text-yellow-400">Portfolio</span>
         </h1>
 
+        <!-- Toggle Button for Mobile -->
+        <button @click="toggleNavbar" class="text-white md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
         <!-- Navigation Links -->
-        <ul class="flex space-x-6">
+        <ul :class="isNavbarOpen ? 'block' : 'hidden' + ' md:flex md:space-x-6'" class="flex flex-col md:flex-row space-y-2 md:space-y-0">
           <li><a href="#about" class="text-white hover:text-yellow-400 transition-colors duration-300" @click.prevent="scrollToSection('about')">About</a></li>
           <li><a href="#projects" class="text-white hover:text-yellow-400 transition-colors duration-300" @click.prevent="scrollToSection('projects')">Projects</a></li>
           <li><a href="#contact" class="text-white hover:text-yellow-400 transition-colors duration-300" @click.prevent="scrollToSection('contact')">Contact</a></li>
         </ul>
-
-        <!-- Call to Action Button -->
-        <a href="#contact" class="ml-6 px-5 py-2 bg-yellow-400 text-indigo-600 font-bold rounded-lg hover:bg-yellow-300 transition-all duration-300" @click.prevent="scrollToSection('contact')">
-          Hire Me
-        </a>
       </nav>
     </div>
   </header>
@@ -28,7 +30,8 @@ export default {
   name: 'HeaderSection',
   data() {
     return {
-      isLoaded: false // untuk memicu animasi saat halaman dimuat
+      isLoaded: false, // untuk memicu animasi saat halaman dimuat
+      isNavbarOpen: false // kontrol toggle untuk navbar
     };
   },
   mounted() {
@@ -46,6 +49,11 @@ export default {
           behavior: 'smooth'
         });
       }
+      // Tutup navbar setelah navigasi pada perangkat mobile
+      this.isNavbarOpen = false;
+    },
+    toggleNavbar() {
+      this.isNavbarOpen = !this.isNavbarOpen; // Toggle the navbar open/close state
     }
   }
 };
