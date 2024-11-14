@@ -4,7 +4,7 @@
       <nav class="flex flex-col md:flex-row justify-between items-center">
         <!-- Logo / Title -->
         <h1 class="text-2xl font-extrabold text-white tracking-wide">
-          My<span class="text-yellow-400">Portfolio</span>
+        <span class="text-yellow-400">Rian Kasim Ramadan</span>
         </h1>
 
         <!-- Toggle Button for Mobile -->
