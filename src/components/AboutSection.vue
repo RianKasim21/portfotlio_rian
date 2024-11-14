@@ -17,18 +17,17 @@
       <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12 text-center md:text-left">
         <h2 class="text-4xl font-extrabold mb-2 text-indigo-600">Hello, I'm Rian Kasim Ramadan</h2>
         <h3 class="text-2xl font-bold mb-4 text-gray-800">Web Developer & Tech Enthusiast</h3>
-        <p class="text-gray-700 leading-relaxed" aria-label="Profile description of Rian Kasim Ramadan, a web developer with expertise in CodeIgniter, Vue.js, Tailwind CSS, and BigQuery">
-  Hi, I’m <strong>Rian Kasim Ramadan</strong>, a highly motivated and dedicated web developer passionate about building visually appealing, functional, and user-centric applications. 
-  With a strong background in both front-end and back-end development, I specialize in creating seamless web solutions that enhance user experience and meet modern web standards. 
-  My technical skill set includes working with frameworks and technologies such as <span class="font-semibold text-indigo-600">CodeIgniter</span> for efficient server-side development, 
-  <span class="font-semibold text-indigo-600">Vue.js</span> for dynamic, interactive user interfaces, <span class="font-semibold text-indigo-600">Tailwind CSS</span> for custom, responsive styling, 
-  and <span class="font-semibold text-indigo-600">BigQuery</span> to handle data analytics and support data-driven decisions.
+        <p class="text-gray-700 leading-relaxed text-justify" aria-label="Profile description of Rian Kasim Ramadan, a web developer with expertise in CodeIgniter, Vue.js, Tailwind CSS, and BigQuery">
+          Hi, I’m <strong>Rian Kasim Ramadan</strong>, a highly motivated and dedicated web developer passionate about building visually appealing, functional, and user-centric applications. 
+          With a strong background in both front-end and back-end development, I specialize in creating seamless web solutions that enhance user experience and meet modern web standards. 
+          My technical skill set includes working with frameworks and technologies such as <span class="font-semibold text-indigo-600">CodeIgniter</span> for efficient server-side development, 
+          <span class="font-semibold text-indigo-600">Vue.js</span> for dynamic, interactive user interfaces, <span class="font-semibold text-indigo-600">Tailwind CSS</span> for custom, responsive styling, 
+          and <span class="font-semibold text-indigo-600">BigQuery</span> to handle data analytics and support data-driven decisions.
 
-  Over the years, I have contributed to a variety of impactful projects, including payroll systems that streamline employee management processes and school library management applications 
-  that simplify and automate book lending. In each project, I prioritize clear functionality, maintainability, and usability to ensure a seamless experience for end-users. 
-  I am always excited to learn and adopt new technologies that enhance productivity and keep up with current trends in the web development landscape.
-</p>
-
+          Over the years, I have contributed to a variety of impactful projects, including payroll systems that streamline employee management processes and school library management applications 
+          that simplify and automate book lending. In each project, I prioritize clear functionality, maintainability, and usability to ensure a seamless experience for end-users. 
+          I am always excited to learn and adopt new technologies that enhance productivity and keep up with current trends in the web development landscape.
+        </p>
       </div>
     </div>
   </section>
